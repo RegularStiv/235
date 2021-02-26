@@ -1,0 +1,32 @@
+body {
+    background-color: darkslateblue;
+    color:white;
+}
+head{
+    font-size: 200%;
+}
+h1{
+    color: white;
+    font-family: fantasy;
+    text-align: left;
+    font-size: 200%;
+}
+h2{
+    color:white;
+    font-family: fantasy;
+    text-align: left;
+    font-size: 200%;
+}
+h4{
+    color:white;
+    font-family: fantasy;
+    text-align: left;
+}
+ul{
+    list-style-position: inside;
+    text-align: left;
+}
+blockquote{
+    color: white;
+    font-style: italic;
+}

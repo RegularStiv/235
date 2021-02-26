@@ -1,0 +1,50 @@
+blockquote { 
+    background-color: lightgray;
+    padding: 1rem;
+    }
+main {
+        font-family: 'Noto Sans', Arial, sans-serif;
+}
+main, header,footer{
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 20;
+    padding: 1rem;
+    background-color: #f7dca9;
+}
+body {
+    background-color: #6F1A07;
+}
+footer {
+    color:#B58DB6;
+}
+h1 {
+    color: #B58DB6;
+}
+h2 {
+    color:#B58DB6;
+}
+hr {
+    color: #2B2118;
+}
+a:link{
+    color: #95A3B3;
+}
+a:visited{
+    color: #E34A6F;
+}
+a:focus{
+    color: #6A66A3;
+}
+a:hover{
+    color: #6A66A3;
+}
+a:active{
+    color: #84A9C0;
+}
+*{
+    border:1px, solid, gray;
+}
+img{
+    float:right;margin:0 15px;
+}

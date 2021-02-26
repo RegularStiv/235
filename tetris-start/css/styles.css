@@ -1,0 +1,35 @@
+figure{
+    display: block;
+    max-width: 650px;
+    overflow:visible;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+header, main, footer {
+    width: 90%;
+    margin-left:auto;
+    margin-right:auto;
+}
+section{
+    display:flex;
+    flex-flow:row wrap;
+}
+.tet{
+    width:60%;
+    flex: 1 0 450px;
+    border:1px solid black;
+}
+span{
+    display:block;
+    margin: 1rem;
+    font-size: 140%;
+    font-weight: 1000;
+}
+div{
+    text-align: center;
+}
+.aliases{
+    text-align: left;
+    margin: 1em;
+}
