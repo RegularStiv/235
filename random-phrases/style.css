@@ -1,0 +1,73 @@
+@font-face {
+    font-family: cowboy;
+    src: url(CowboyCadaver-K6jp.ttf);
+}
+* {
+    font-family: "cowboy", Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:#E09F3E;
+    
+}
+#grid{
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-auto-rows: 500px;
+    grid-template-areas: "text";
+    margin:5% 25%;
+
+}
+header{
+    justify-self: center;
+    align-self:flex-start;
+    font-size:500%;
+    color:#540B0E;
+    padding-left: 15%;
+}
+#textbox{
+    display: grid;
+    grid-area:text;
+    grid-template-areas: "text text"
+                         "copy button";
+    background-image: url("cowboy.jpg");
+    background-repeat: no-repeat;
+}
+#textarea{
+    display: flex;
+    grid-area:text;
+    align-self: center;
+    justify-self: center;
+    font-size:225%;
+}
+h3{
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    color:crimson;
+    padding-left: 15%;
+    padding-right:15%
+}
+p{
+    align-self: flex-end;
+    justify-self: flex-start;
+    grid-area: copy;
+    color:#540B0E;
+    padding-left: 2%;
+}
+
+button {
+    transition-duration: 0.4s;
+    grid-area:button;
+    height:50px;
+    width:150px;
+    align-self: end;
+    justify-self: end;
+    color: black;
+    border: solid 2px black;
+}
+  
+button:hover {
+    background-color: black;
+    color: white;
+  }

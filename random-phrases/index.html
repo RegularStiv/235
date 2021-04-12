@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="style.css">
+    <title>Cowboy Talkin'</title>
+</head>
+<body>
+    <header>Cowboy Talkin'</header>
+    <div id = "grid">
+    <div id = "textbox">
+        <h3 id = "textarea">
+
+        </h3>
+        <p>Copyright 2021 Stephen Rumpp</p>
+        <button class="button" onclick="displayQuote()">Load a New Phrase</button>
+    </div>
+    </div>
+    <script>
+        let phraseBox = document.querySelector("h3");
+        function displayQuote(e= phraseBox, phrases = ["The best way to stay alive in the Wild West is to only trust yourself.", 
+        "The lawless land gives me the most freedom.",
+        "All I need out here is a fast horse, my revolver, and my head.",
+        "In the desert, you can remember your name 'cause there ain't no one for to give you no pain",
+        "The ocean is a desert with it's life underground and a perfect disguise above"])
+        {
+            let randomInt = Math.floor(Math.random() * phrases.length);
+            e.innerHTML = phrases[randomInt];
+        }
+        
+        window.onLoad(displayQuote());
+        button.onclick = displayQuote;
+    </script>
+</body>
+</html>

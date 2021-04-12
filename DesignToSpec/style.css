@@ -35,7 +35,6 @@ header h2{
     text-align:right;
     margin-right: 11vw;
     font-size: 110%;
-    align-self: right;
     font-family: header, Arial, Helvetica, sans-serif;
 }
 .wrapper{
@@ -54,7 +53,7 @@ header h2{
 }
 #tree-text{
     grid-area: tree-text;
-    font-size: 85%;
+    font-size: 75%;
     margin-left: 5vw;
     font-family: body, Arial, Helvetica, sans-serif;
 }
@@ -99,7 +98,8 @@ h1{
 .textbox {
     background-color: #686868;
     padding:3rem;
-    font-size: 125%;
+    line-height: 1.5;
+    font-size: 100%;
 }
 #planks-img{
     grid-area: planks-img;
@@ -120,6 +120,7 @@ h1{
     grid-area: sticks-text;
     font-family: body, Arial, Helvetica, sans-serif;
     margin-top:5vh;
+    font-size: 95%;
 }
 #chests-img{
     grid-area: chests-img;
@@ -140,6 +141,7 @@ h1{
     grid-area: stairs-text;
     font-family: body, Arial, Helvetica, sans-serif;
     margin-bottom:5vh;
+    font-size: 95%;
 }
 footer{
     display:grid;
