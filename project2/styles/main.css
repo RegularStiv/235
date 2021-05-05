@@ -3,14 +3,13 @@
 }
 
  header{
-     background: url(../images/cats.jpg);
-     padding: 10px,100px;
+     padding: 10px 100px;
      height:195px;
  }
  
  header h1{
      margin:0;
-     color:blue;
+     color:#8b80f9;
      text-align:center;
      font-size:100px;
      padding-top: 35px;
@@ -20,11 +19,21 @@
      font-style: italic;
      height:32px;
  }
- 
+ #content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+ }
  .result {
     position: relative;
-    height: 175px;
-    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    height: 300px;
+    width: 300px;
     float:left;
     border:1px solid gray;
     padding:5px;
@@ -35,6 +44,8 @@
 .result img {
     position: absolute;
     left: 5px;
+    height:70%;
+    width: 97%;
     bottom: 5px;
     display:block;
     
@@ -65,21 +76,38 @@ button{
   text-shadow : 0 1px 3px rgba(0,0,0,.4);
   font-family : sans-serif;
   text-decoration : none;
+  border-color: #6cd4ff;
+      background: #6cd4ff;
+      background: linear-gradient(to top, #6cd4ff 0%,#438c00 100%);
 }
 
-button.green{
-    border-color: #8fc800;
-      background: #8fc800;
-      background: linear-gradient(top, #8fc800 0%,#438c00 100%);
+body{
+    background-color: #CFB1B7;
+    color:#6b4b3e;
 }
 
 button:hover{
-    background: #8fDD00;
+    background: #cfbff7;
 }
 
 button:active{
     background: #8fFF00;
     box-shadow : 0 0 6px rgba(0,0,0,.6);
+}
+a:link{
+    color: #320e3b;
+}
+a:visited{
+    color: #83858c;
+}
+a:focus{
+    color: #6A66A3;
+}
+a:hover{
+    color: #6A66A3;
+}
+a:active{
+    color: #58355e;
 }
 
 button:focus {outline:0;}
@@ -90,19 +118,49 @@ button:focus {outline:0;}
 }
 #search-area{
     display: flex;
-    background-color: lightgrey;
     margin-top: 50px;
     flex-direction: column;
     justify-content: center;
 }
-#container{
+#container-search{
+    display: flex;
+    justify-content: center;
+}
+#container-results{
     display: flex;
     justify-content: center;
 }
 #result-area{
     display: flex;
     justify-content: center;
-    background-color: lightgrey;
     padding-bottom: 20px;
     flex-direction: column;
+}
+#nextandprev{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+#spinner{
+    position:fixed;
+    left:50%;
+    top:50%;
+}
+
+#search-bar{
+    display:flex;
+    justify-content: center;
+}
+#limit-area{
+    display:flex;
+    justify-content: center;
+}
+#search-button{
+    display: flex;
+    flex-direction: column;
+    padding:0px 50%;
+}
+#documentation{
+    color:black;
 }
