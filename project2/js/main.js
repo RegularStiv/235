@@ -209,7 +209,7 @@
         
     }
     function dataError(e){
-        console.log("An Error Occurred");
+        //console.log("An Error Occurred");
     }
 
 
@@ -238,7 +238,7 @@
             trendingLoad();
         }
     }
-
+    
     function prevClick(){
         //if not first page do this
         if(offset > 0){
