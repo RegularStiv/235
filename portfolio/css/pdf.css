@@ -1,0 +1,126 @@
+iframe{
+    align-self: center;
+    width: 95%;
+    height: 900px;
+}
+body{
+    background-color: #3685B5;
+    color: lightgray;
+    
+}
+
+header ul {
+    font-size: 25px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    grid-area: navbar;
+}
+header ul h1{
+    color: white;
+}
+header li {
+    float:right;
+}
+#grid-system{
+    display: grid;
+    grid-template-areas: "navbar"
+                        "info"
+                        "skills"
+                        "project";
+}
+header li a{
+    display: block;
+    color:lightgray;
+    text-align: center;
+    padding: 25px 25px;
+    text-decoration: none;
+}
+header li a:hover{
+    background-color: lightgray;
+    color:black;
+}
+body{
+    margin: 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#logo{
+    float:left;
+}
+header {
+    background-color: black;
+    display: grid;
+    grid-template-columns:auto auto;
+    grid-template-rows: 75px;
+    grid-template-areas: "navbar navbar";
+}
+#flex{
+    display: flex;
+    justify-content: center;
+}
+.dropdown{
+    display: none;
+}
+@media screen and (max-width:1000px) {
+    .nav{
+        display: none;
+    }
+    header {
+        background-color: black;
+        display: grid;
+        grid-template-columns:auto auto;
+        grid-template-rows: 75px;
+        grid-template-areas: "navbar button";
+        font-size: 25px;
+        
+    }
+    header a{
+        text-decoration: none;
+        padding:25px;
+        color: lightgray;
+    }
+    .dropdown{
+        display: initial;
+        position: relative;
+        justify-self: center;
+        padding-left:25px;
+        padding-right:25px;
+    }
+    .dropbtn {
+        background-color: black;
+        color: lightgray;
+
+        grid-area: button;
+        padding: 23px;
+        font-size: 25px;
+        border: none;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0px;
+        top: 75px;
+        background-color: #f1f1f1;
+        min-width: 153px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      #drop-logo{
+          float:left;
+      }
+      .dropdown-content a:hover {background-color: #ddd;}
+
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {display: block;}
+      
+      /* Change the background color of the dropdown button when the dropdown content is shown */
+      .dropdown:hover .dropbtn, .dropdown:hover {background-color: lightgray; color:black;}
+}

@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "arcade";
+    src: url("../fonts/PressStart2P-vaV7.ttf")format("truetype");
+}
+body{
+    background-color: gray;
+    font-family: arcade, Arial, Helvetica, sans-serif;
+}
+#navbar ul{
+    font-size: 25px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    grid-area: navbar;
+}
+#navbar li{
+    display: flex;
+    align-content: center;
+    padding-right: 25px;
+    padding-top: 15px;
+    text-decoration: none;
+    color:black;
+}
+#other{
+    float:right;
+}
+#snake{
+    float: left;
+    padding-left: 25px;
+}
+#navbar{
+    background-color: black;
+}
+li{
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+a {
+    display: block;
+    padding: 8px;
+    background-color: black;
+    color:greenyellow;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+iframe{
+    align-self: center;
+    margin-left: 20%;
+    width: 60%; 
+    height: 900px;
+}
+a:hover{
+    color:red;
+}
+#other-link{
+    float:right;
+}
+#other-about{
+    float:right;
+}

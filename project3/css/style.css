@@ -1,15 +1,17 @@
+@font-face {
+    font-family: "arcade";
+    src: url("../fonts/PressStart2P-vaV7.ttf")format("truetype");
+}
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: gray;
+    background-color: black;
+    font-family: arcade, Arial, Helvetica, sans-serif;
 }
 #gridContainer{
     background-color: black;
-    border:solid color white 1px;
-    width: 800px;
+    border:solid 5px white;
+    display: grid;
     height: 800px;
-    display:grid;
+    width: 800px;
     grid-template-columns: repeat(25,1fr);
     grid-template-rows: repeat(25,1fr);
 }
@@ -20,4 +22,89 @@ body{
 .food{
     background-color: red;
     border: solid 2px white;
+}
+ul{
+    font-size: 25px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    grid-area: navbar;
+    color: white;
+}
+li{
+    display: flex;
+    align-content: center;
+    padding-right: 25px;
+    padding-top: 15px;
+    text-decoration: none;
+    float: right;
+    color:black;
+}
+a {
+    display: block;
+    padding: 8px;
+    background-color: black;
+    color:greenyellow;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+#maingrid{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr) ;
+    grid-template-rows: repeat(4,1fr) ;
+    grid-template-areas:
+                        "score game game game high"
+                        "score game game game high"
+                        "score game game game high"
+}
+#navbar{
+    display:grid;
+    background-color: black;
+    grid-template-columns: auto;
+    grid-template-rows: 75px;
+    grid-template-areas: "navbar navbar";
+    font-size: 200%;
+}
+#scorelevel {
+    grid-area: score;
+    color: white;
+    margin-left:20px;
+    
+}
+#scorelevel h2{
+font-size: 300%;
+text-align: center;
+}
+#scorelevel p{
+    font-size: 150%;
+    text-align: center;
+}
+#directions{
+    grid-area: directions ;
+    font-size: 150%;
+}
+#highscore{
+    grid-area: high;
+    color:red;
+    text-align: center;
+}
+#flex{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    grid-area: game;
+}
+#snake{
+    float:left;
+    padding-left: 25px;
+    color: greenyellow;
+}
+a:hover{
+    color:red;
+}
+h1{
+    font-size: 400%;
 }

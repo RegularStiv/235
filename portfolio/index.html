@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="css/style.css">
+    <title>Stephen Rumpp's Portfolio</title>
+</head>
+<body id = "grid-system">
+    <header>
+        <ul class = "nav">
+            <li id = "logo"><a href = "index.html">Stephen Rumpp</a></li>
+
+            <li><a href=#projects>Projects</a></li>
+            <li > <a href="resume.html">Resume</a></li>
+            <li ><a href= #about-me>About</a></li>
+            <li ><a href=#Skills>Skills</a></li>
+            
+        </ul>
+        <a href = "index.html" id = "drop-logo" class = "dropdown">Stephen Rumpp</a>
+        <div class="dropdown">
+            <div class="dropbtn">Links</div>
+            <div class="dropdown-content">
+              <a href="#Skills">Skills</a>
+              <a href="#about-me">About</a>
+              <a href = "resume.html">Resume</a>
+              <a href="#projects">Projects</a>
+            </div>
+          </div>
+    </header>
+    <section class = "wrapper">
+        <h1 id = "tag">Coding is my passion</h1>
+        <img id = "about-me-pic" src = "media/ME.jpg" alt = "picture of me">
+        <div id = "about-me">
+            I am a Game Developer and Front End Developer from Boston, Massachusetts.  
+            I enjoy taking new ideas and turning them into games and stories as well.
+            Sometimes I find it fun to make fake websites for games or stories I really enjoy.
+            Outside of coding I enjoy reading comics, playing video games with friends and cooking.
+        </div>
+        <img id = "about-me-pic-small" src = "media/cropped-me.jpg" alt = "smaller picture of me">
+
+    </section>
+    <section id = "Skills">
+        <div id = "flex">
+        <h2 id = "section">Selected Skills</h2>
+    </div>
+        <div id = "lang">
+            <ul class = "flex">
+                <li id = "topli">Languages</li>
+                <li>C#</li>
+                <li>C++</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Java</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+        <div id = "software">
+            <ul class = "flex">
+                <li id = "topl">Software</li> 
+                <li>Unity</li>
+                <li>Visual Studio</li>
+                <li>Visual Studio Code</li>
+                <li>Git</li>
+            </ul>
+        </div>
+        <div id = "frameworks">
+            <ul class = "flex">
+                <li id = "toplist">Frameworks</li>
+                <li>MonoGame</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id = "projects">
+        <h2 id = "section-project">Projects</h2>
+        <div class = "textbox" >
+            <img id = "one" src = "media/exercise.PNG" alt = "temp img">
+            <a href = "https://igme-202.github.io/exercises-RegularStiv/">Unity Exercises</a>
+            <p id = "one-text">
+                These are a series of exercises done in Unity. 
+                They range in difficulty and uses both 2D and 3D versions of Unity.
+                The goal was to get a basic understanding of Unity at first then get a more advanced knowlege of the topic.
+                They were made for one of the classes I took pertaining to Unity 
+                and helped me understand how to use Untiy, and C# Scripts effectivly.
+            </p>
+        </div>
+        <div class = "textbox" >
+            <img id = "two" src = "media/snake.PNG" alt = "temp img">
+            <a href = "https://people.rit.edu/sar7743/235/project3/">Leveled Snake</a>
+            <p id = "two-text">
+                This game is based off of the classic Snake game but is changed for the things I didn't enjoy when I played Snake.
+                The snake goes faster as you level up and the layout and design of the game is aimed to look like it is an old arcade machine.
+                The game is made entirely out of JavaScript, HTML, CSS and one library howler.js and without using the canvas tag.
+                This was the final project for my web development class and the goal was to learn the technologies used in JavaScript by making a game.
+            </p>
+        </div>
+        <div class = "textbox" >
+            <img id = "three" src = "media/space.PNG" alt = "asteroids img">
+            <p id = "three-text">
+                This was a project for one of my classes where in we had to make a version of asteroids.  
+                It is a version of asteroids using a from scratch movement using floaty physics so you drift a lot.  
+                The goal was to learn how different physics are implemented and used in differnet games.
+                This was made in Unity and utilized C# scripts to function.
+            </p>
+        </div>
+        <div class = "textbox" >
+            <img id = "four" src = "media/norman.PNG" alt = "norman the neckbeard img">
+            <p id = "four-text">
+                This was my first game made with other people and the first game I made in MonoGame. 
+                The goal was to learn how to use MonoGame and how to effectivly work in a group of people while working on a game.
+                I worked on the AI, movement and level generation. 
+                This was made over the course of a semester about three months but we really only learned the required information halfway through the course.
+                 We were still figuring out how to make a game using MonoGame and then we had to move entirely online because of the pandemic.</p>
+        </div>
+    </section>
+    <footer>
+            Email: <a href="mailto:stephenrumpp7@gmail.com">stephenrumpp7@gmail.com</a>
+            <br>
+            Phone: <a href="tel:7817529378">(781) 752-9378</a>
+    </footer>
+</body>
+</html>
