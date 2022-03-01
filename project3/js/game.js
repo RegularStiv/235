@@ -28,16 +28,17 @@ function foodUpdate(){
             level++;
             //alert('level is now: ' + level);
             count = 0;
-            snake.direction = {x: 0, y: 0};
-            snake.snakeBody =[{x: 13,y: 13}];
+            // snake.direction = {x: 0, y: 0};
+            // snake.snakeBody =[{x: 13,y: 13}];
             snake.reset = true;
         }
         //expands the snake if it isnt reset or increase level
         if(!snake.reset)
         {
             pickup.play();
-            snake.expand();
+            
         }
+        snake.expand();
     }
 }
 function foodDraw(gameboard){
